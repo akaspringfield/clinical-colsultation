@@ -14,4 +14,11 @@
   <h2>{{ blog.title }}</h2>
 </a>
 
+  <h5>{{ blog.date }}</h5>
+  <p>{{ blog.description|truncatechars:100 }}</p>
+
+{% endfor %}
+<br>
+<br>
+
 {% endblock %}
